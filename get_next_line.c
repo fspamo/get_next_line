@@ -6,7 +6,7 @@
 /*   By: cbozkurt <cbozkurt@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 12:15:23 by cbozkurt          #+#    #+#             */
-/*   Updated: 2026/02/16 13:52:27 by cbozkurt         ###   ########.fr       */
+/*   Updated: 2026/02/16 22:38:35 by cbozkurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,11 @@
 char	*get_next_line(int fd)
 {
 	char	*buf;
+	int		nbytes;
+
+	nbytes = read(fd, buf, BUFFER_SIZE);
 	buf = malloc(BUFFER_SIZE + 1);
-	read(fd, buf, 5);
+	buf[nbytes] = '\0';
 	return (buf);
 }
 

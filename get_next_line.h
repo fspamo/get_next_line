@@ -6,7 +6,7 @@
 /*   By: cbozkurt <cbozkurt@student.42kocaeli.com.  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 12:35:03 by cbozkurt          #+#    #+#             */
-/*   Updated: 2026/02/16 12:37:57 by cbozkurt         ###   ########.fr       */
+/*   Updated: 2026/02/19 11:54:55 by cbozkurt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 char	*get_next_line(int fd);
 char	*ft_strchr(const char *s, int ch);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strdup(const char *s);
 size_t	ft_strlen(const char *s);
 
 #endif
